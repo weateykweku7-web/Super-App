@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android-Super-App | Customer Portal & Ecosystem</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --whatsapp: #25d366;
+            --whatsapp-dark: #1ebe5d;
+            --danger: #dc2626;
+            --danger-dark: #b91c1c;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-light: #64748b;
+        }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+        }
+        h1 {
+            font-size: 2.3rem;
+            color: var(--text);
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.05rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto 25px auto;
+        }
+        .badge {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        /* Auth Card Box */
+        .auth-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            margin: 30px 0;
+            border: 1px solid #e2e8f0;
+            text-align: center;
+        }
+        .auth-card h3 {
+            margin-top: 0;
+            color: var(--primary);
+            font-size: 1.4rem;
+        }
+        .auth-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: background 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: var(--primary-dark);
+        }
+        .btn-whatsapp {
+            background: var(--whatsapp);
+            color: white;
+        }
+        .btn-whatsapp:hover {
+            background: var(--whatsapp-dark);
+        }
+        .btn-secondary {
+            background: #475569;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background: #334155;
+        }
+        .btn-danger {
+            background: #f1f5f9;
+            color: var(--danger);
+            border: 1px solid #cbd5e1;
+        }
+        .btn-danger:hover {
+            background: var(--danger);
+            color: white;
+            border-color: var(--danger);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin: 50px 0 20px 0;
+            color: var(--text);
+            font-size: 1.6rem;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        @media (min-width: 600px) {
+            .services-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 22px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+            border: 1px solid #e2e8f0;
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--primary);
+            font-size: 1.15rem;
+        }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px 0;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+  <link rel="manifest" href="/manifest.json">
+
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header / Hero Section -->
+        <header>
+            <h1>Android-Super-App</h1>
+            <div class="badge">🔒 Secure Admin-Verified Access</div>
+            <p class="subtitle">Welcome to your all-in-one mobile ecosystem. Access your account, explore powerful app modules, or contact admin for registration approval.</p>
+        </header>
+
+        <!-- Authentication & Account Control Portal -->
+        <div class="auth-card">
+            <h3>Customer Account Portal</h3>
+            <p style="color: var(--text-light); font-size: 0.95rem; max-width: 600px; margin: 0 auto 15px auto;">
+                New accounts require administrative verification and approval. Contact admin directly via WhatsApp or email to get approved or manage your data.
+            </p>
+            
+            <!-- WhatsApp Direct Admin Approval Link -->
+            <div style="margin-bottom: 20px;">
+                <a href="https://wa.me/233553688108?text=Hello%20Admin,%20I%20would%20like%20to%20request%20approval%20for%20my%20Android-Super-App%20account." target="_blank" class="btn btn-whatsapp" style="font-size: 1rem; padding: 12px 24px;">
+                    💬 Chat on WhatsApp for Approval (+233 55 368 8108)
+                </a>
+            </div>
+
+            <div class="auth-buttons">
+                <a href="mailto:weateykweku7@gmail.com?subject=Sign In Request" class="btn">Sign In (Email)</a>
+                <a href="mailto:weateykweku7@gmail.com?subject=New Account Registration Request" class="btn btn-secondary">Register / Sign Up</a>
+                <a href="mailto:weateykweku7@gmail.com?subject=Account Deletion Request" class="btn btn-danger">Delete Account</a>
+            </div>
+        </div>
+
+        <h2 class="section-title">App Modules & Features</h2>
+
+        <!-- App Features Grid -->
+        <section class="services-grid">
+            <div class="card">
+                <h3>🤖 AI Creator Studio</h3>
+                <p>Advanced generative AI tools built directly into the app to streamline creation and intelligent assistance.</p>
+            </div>
+
+            <div class="card">
+                <h3>📥 Media Downloader</h3>
+                <p>Fast, reliable file and media downloading utility built right into your mobile workflow for offline access.</p>
+            </div>
+
+            <div class="card">
+                <h3>💬 Smart Chat Hub</h3>
+                <p>Centralized communication hub and navigation system designed for seamless messaging and interaction.</p>
+            </div>
+
+            <div class="card">
+                <h3>❤️ Social & Dating</h3>
+                <p>Engaging community and social matching features formatted into a sleek, responsive mobile interface.</p>
+            </div>
+
+            <div class="card">
+                <h3>🎬 Media Player</h3>
+                <p>Optimized playback system built to handle audio and video files natively within your ecosystem.</p>
+            </div>
+
+            <div class="card">
+                <h3>⚙️ Settings & Control</h3>
+                <p>Robust control panel allowing users to manage preferences, accounts, and application behaviors.</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Weatey Ofori Kweku. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "id": "/",
+  "name": "Android-Super-App",
+  "short_name": "SuperApp",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f8fafc",
+  "theme_color": "#2563eb",
+  "description": "An all-in-one mobile ecosystem featuring secure admin-verified access."
+}
